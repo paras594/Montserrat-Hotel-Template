@@ -1,0 +1,29 @@
+.header {
+	height: 50rem;
+	position: relative;
+	z-index: 1;
+	display: flex;
+	align-items: flex-end;
+
+	&__button {
+		margin: 0 auto 8rem auto;
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 100%;
+			border-top: 16px solid $yellow;
+			border-right: 100px solid transparent;
+			border-bottom: 16px solid transparent;
+			border-left: 100px solid transparent;
+			width: 100%;
+			height: 100%;
+			transition: border-top 0.2s ease;
+		}
+
+		&:hover::after {
+			border-top: 16px solid $yellow-light;
+		}
+	}
+}

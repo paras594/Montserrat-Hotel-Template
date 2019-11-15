@@ -1,0 +1,32 @@
+.heading {
+	text-align: center;
+	display: inline-block;
+
+	&__brand {
+		font-size: 1.2rem;
+		margin: 1rem 0;
+		color: $yellow;
+	}
+
+	&__title {
+		letter-spacing: 0.5px;
+		padding-bottom: 0.7rem;
+		font-size: 2.4rem;
+		color: $yellow;
+		font-family: serif;
+
+		&--medium {
+			font-size: 2.6rem;
+		}
+
+		&--large {
+			font-size: 2.8rem;
+		}
+	}
+
+	&__sub-title {
+		padding-bottom: 1rem;
+		font-size: 3.5rem;
+		color: $gray-800;
+	}
+}

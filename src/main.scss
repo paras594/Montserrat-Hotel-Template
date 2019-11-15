@@ -1,0 +1,25 @@
+@import "./styles/abstracts/variables";
+@import "./styles/abstracts/utility";
+@import "./styles/abstracts/mixins";
+
+@import "./styles/base/typography";
+@import "./styles/base/base";
+
+// components
+@import "./styles/components/button";
+@import "./styles/components/heading";
+@import "./styles/components/navbar";
+@import "./styles/components/header";
+@import "./styles/components/tooltip";
+@import "./styles/components/carousel";
+@import "./styles/components/form";
+
+// layouts and sections
+@import "./styles/layout/grid";
+@import "./styles/layout/welcome-section";
+@import "./styles/layout/rooms-section";
+@import "./styles/layout/services-section";
+@import "./styles/layout/testimoney-section";
+@import "./styles/layout/blog-section";
+@import "./styles/layout/contact-section";
+@import "./styles/layout/footer-section";

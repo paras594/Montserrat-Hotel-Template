@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-family: $font-roboto;
+	font-size: 16px;
+	background: $white;
+	min-height: 600px;
+	height: 100%;
+}
+
+::placeholder {
+	color: $black;
+}

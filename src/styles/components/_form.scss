@@ -1,0 +1,94 @@
+.form {
+	text-align: left;
+
+	&__group {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		margin-bottom: 2rem;
+		i {
+			@include flex-center;
+			height: 4rem;
+			font-size: 2rem;
+			color: $white;
+			margin-right: 1rem;
+			flex: 0 0 4rem;
+		}
+	}
+
+	&__input-group {
+		position: relative;
+		flex: 1 1 0;
+		z-index: 1;
+
+		input {
+			background: transparent;
+			border: none;
+			border-bottom: 2px solid $white;
+			font-size: 1.4rem;
+			padding: 0.5rem;
+			width: 100%;
+
+			&:focus {
+				outline: none;
+			}
+
+			&:focus + label {
+				top: -40%;
+				font-size: 1rem;
+			}
+		}
+
+		label {
+			position: absolute;
+			left: 0;
+			top: 50%;
+			z-index: -1;
+			color: $white;
+			font-weight: 700;
+			font-size: 1.4rem;
+			padding: 0 0.1rem;
+			transform: translate(0, -50%);
+			transition: top 0.2s ease, padding 0.2s ease, font-size 0.2s ease;
+		}
+	}
+
+	&__label {
+		font-size: 1.4rem;
+		font-weight: 700;
+		padding: 0 0.1rem;
+		color: $white;
+		height: 4rem;
+		display: flex;
+		align-items: center;
+	}
+
+	&__textarea {
+		width: 100%;
+		height: 10rem;
+		border: 2px solid $white;
+		background: transparent;
+		padding: 0.5rem;
+		font-size: 1.4rem;
+		font-family: $font-roboto;
+
+		&:focus {
+			outline: 1px solid $yellow;
+			outline-offset: 0.2rem;
+		} 
+	}
+
+	&__button {
+		display: block;
+		width: 15rem;
+		background: $white;
+		border: none;
+		font-size: 1.6rem;
+		letter-spacing: 1px;
+		font-weight: 700;
+		padding: 0.6rem 0;
+		color: $yellow;
+      margin-left: auto;
+      cursor: pointer;
+	}
+}
