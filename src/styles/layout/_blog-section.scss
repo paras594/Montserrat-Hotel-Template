@@ -3,27 +3,40 @@
 	margin: 8rem auto;
 
 	&__carousel {
+		position: relative;
 		margin: 2rem auto;
 		// @include outline();
 		width: 50rem;
+		height: 42rem;
 	}
 
-	&__carousel-track {
-		width: 100%;
-		display: flex;
+	&__track-container {
+		// @include outline(blue);
+		position: relative;
+		overflow: hidden;
+		height: 100%;
+	}
+
+	&__track {
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		position: relative;
+		transition: transform 250ms ease-in;
 	}
 
 	&__blog {
-		width: 100%;
+		height: 100%;
 		display: flex;
 		flex-direction: column;
-		background: $gray-100;
+		background: $gray-200;
 		padding: 2.5rem;
 	}
 
-	&__img {
-		width: 100%;
+	&__images {
 		height: 25rem;
+		width: 100%;
 		object-fit: cover;
 	}
 
@@ -43,11 +56,49 @@
 		font-size: 1.4rem;
 		letter-spacing: 1px;
 		color: $gray-900;
-
 	}
 
 	&__button {
 		margin-top: 1rem;
 		margin-bottom: 1rem;
+	}
+
+	&__carousel-button {
+		position: absolute;
+		font-size: 3rem;
+		top: 50%;
+		transform: translateY(-50%);
+		background: transparent;
+		border: 0;
+		cursor: pointer;
+		color: $gray-600;
+	}
+
+	&__button-left {
+		right: 102%;
+	}
+
+	&__button-right {
+		left: 102%;
+	}
+
+	&__nav {
+		display: flex;
+		justify-content: center;
+		padding: 1rem 0;
+		bottom: 5%;
+	}
+
+	&__indicator {
+		display: block;
+		width: 20px;
+		height: 20px;
+		background: $gray-500;
+		border-radius: 50%;
+		margin: 0 0.5rem;
+
+		&.current-slide {
+			background: $yellow;
+		}
 	}
 }

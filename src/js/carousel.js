@@ -92,7 +92,10 @@ class Carousel {
 
 		this.updateDots(currentDot, nextDot);
 		this.hideShowArrows(nextIndex);
-		this.resetInterval();
+
+		if (this.infiniteFadeEffect) {
+			this.resetInterval();
+		}
 	};
 
 	slideToPrev = e => {
@@ -111,7 +114,9 @@ class Carousel {
 
 		this.updateDots(currentDot, prevDot);
 		this.hideShowArrows(prevIndex);
-		this.resetInterval();
+		if (this.infiniteFadeEffect) {
+			this.resetInterval();
+		}
 	};
 
 	addEventHandlers = () => {

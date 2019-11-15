@@ -7,3 +7,5 @@ const dotsNav = document.querySelector(".carousel__nav");
 
 const headerCarousel = new Carousel(track, nextBtn, prevBtn, dotsNav, true);
 headerCarousel.infiniteFade(true);
+
+export default headerCarousel;
