@@ -8,6 +8,7 @@
 		// @include outline();
 		width: 50rem;
 		height: 42rem;
+		z-index: -1;
 	}
 
 	&__track-container {
@@ -75,11 +76,11 @@
 	}
 
 	&__button-left {
-		right: 102%;
+		right: 105%;
 	}
 
 	&__button-right {
-		left: 102%;
+		left: 105%;
 	}
 
 	&__nav {

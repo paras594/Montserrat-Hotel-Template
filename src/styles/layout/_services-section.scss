@@ -30,7 +30,7 @@
 
 		&:hover .tooltip {
 			opacity: 1;
-			bottom: 105%;
+			top: 102%;
 		}
 
 		&:hover .services__detail {
@@ -68,12 +68,13 @@
 			left: 50%;
 			transform: translateX(-50%);
 			font-size: 1.1rem;
+			font-weight: 700;
 			color: $white;
 			padding: 1rem;
 		}
 	}
 
 	&__button {
-		margin: 2.5rem 0;
+		margin: 3rem 0;
 	}
 }

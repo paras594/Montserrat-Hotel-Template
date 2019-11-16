@@ -2,14 +2,17 @@
 	text-align: left;
 
 	&__group {
+		// @include outline();
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
-		margin-bottom: 2rem;
-		i {
-			@include flex-center;
-			height: 4rem;
-			font-size: 2rem;
+		margin-bottom: 2.5rem;
+
+		ion-icon {
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			font-size: 2.8rem;
 			color: $white;
 			margin-right: 1rem;
 			flex: 0 0 4rem;
@@ -26,6 +29,7 @@
 			border: none;
 			border-bottom: 2px solid $white;
 			font-size: 1.4rem;
+			color: $white;
 			padding: 0.5rem;
 			width: 100%;
 
@@ -34,8 +38,8 @@
 			}
 
 			&:focus + label {
-				top: -40%;
-				font-size: 1rem;
+				top: -30%;
+				font-size: 0.9rem;
 			}
 		}
 
@@ -54,11 +58,11 @@
 	}
 
 	&__label {
-		font-size: 1.4rem;
+		font-size: 1.5rem;
 		font-weight: 700;
 		padding: 0 0.1rem;
 		color: $white;
-		height: 4rem;
+		height: 2.8rem;
 		display: flex;
 		align-items: center;
 	}
@@ -75,7 +79,7 @@
 		&:focus {
 			outline: 1px solid $yellow;
 			outline-offset: 0.2rem;
-		} 
+		}
 	}
 
 	&__button {
@@ -88,7 +92,7 @@
 		font-weight: 700;
 		padding: 0.6rem 0;
 		color: $yellow;
-      margin-left: auto;
-      cursor: pointer;
+		margin-left: auto;
+		cursor: pointer;
 	}
 }
