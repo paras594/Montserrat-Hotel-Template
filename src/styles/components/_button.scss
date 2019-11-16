@@ -10,6 +10,9 @@
 	margin: 0 auto;
 	letter-spacing: 1px;
 	transition: background 0.2s ease;
+	&--small {
+		padding: 0.5rem 1rem;
+	}
 
 	&--bold {
 		font-size: 1.1rem;
