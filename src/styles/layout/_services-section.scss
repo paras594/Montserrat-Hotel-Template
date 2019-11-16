@@ -35,7 +35,7 @@
 
 		&:hover .services__detail {
 			transform: scaleY(1);
-			opacity: 1;
+			opacity: 0.9;
 		}
 
 		img {
@@ -60,7 +60,7 @@
 			border-top-right-radius: 50%;
 			border-top-left-radius: 50%;
 			// background: $gray-600;
-			background: rgba($yellow, .9);
+			background: rgba($yellow, 0.9);
 			position: absolute;
 			width: 110%;
 			height: 100%;

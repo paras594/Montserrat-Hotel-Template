@@ -4,7 +4,7 @@
 	align-items: center;
 	text-decoration: none;
 	padding: 0.8rem 1.6rem;
-	font-size: 1rem;
+	font-size: 1.1rem;
 	background: $yellow;
 	color: $white;
 	margin: 0 auto;
@@ -12,6 +12,7 @@
 	transition: background 0.2s ease;
 	&--small {
 		padding: 0.5rem 1rem;
+		font-size: 1rem;
 	}
 
 	&--bold {
