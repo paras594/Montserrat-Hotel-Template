@@ -7,6 +7,10 @@
 		font-size: 2rem;
 		color: $gray-800;
 		letter-spacing: 1px;
+
+		@media (max-width: 950px) {
+			font-size: 1.4rem;
+		}
 	}
 
 	&__icons {
@@ -16,6 +20,10 @@
 		height: 10rem;
 		width: 90%;
 		margin: 0 auto;
+
+		@media (max-width: 950px) {
+			height: 7rem;
+		}
 	}
 
 	&__icon {

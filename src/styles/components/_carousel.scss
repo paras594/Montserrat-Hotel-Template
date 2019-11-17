@@ -20,6 +20,10 @@
 		font-family: $font-serif;
 		font-weight: 600;
 		letter-spacing: 1px;
+
+		@media (max-width: 950px){
+			font-size: 2.8rem;
+		}
 	}
 
 	&__sub-heading {
@@ -30,6 +34,10 @@
 		font-family: $font-serif;
 		font-weight: 100;
 		letter-spacing: 1px;
+
+		@media (max-width: 950px){
+			font-size: 1.5rem;
+		}
 	}
 
 	&__track-container {
@@ -104,11 +112,11 @@
 	}
 
 	&__button-left {
-		left: 2%;
+		left: 4%;
 	}
 
 	&__button-right {
-		right: 2%;
+		right: 4%;
 	}
 
 	&__nav {
