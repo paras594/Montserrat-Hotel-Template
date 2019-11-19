@@ -8,6 +8,10 @@
 		align-items: center;
 		margin-bottom: 2.5rem;
 
+		@media (max-width: 1400px) {
+			margin-bottom: 2.2rem;
+		}
+
 		ion-icon {
 			display: flex;
 			justify-content: center;
@@ -16,6 +20,11 @@
 			color: $white;
 			margin-right: 1rem;
 			flex: 0 0 4rem;
+
+			@media (max-width: 1400px) {
+				font-size: 2.4rem;
+				flex: 0 0 3rem;
+			}
 		}
 	}
 
@@ -32,6 +41,11 @@
 			color: $white;
 			padding: 0.5rem;
 			width: 100%;
+
+			@media (max-width: 1400px) {
+				font-size: 1.2rem;
+				padding: 0.3rem;
+			}
 
 			&:focus {
 				outline: none;
@@ -54,6 +68,10 @@
 			padding: 0 0.1rem;
 			transform: translate(0, -50%);
 			transition: top 0.2s ease, padding 0.2s ease, font-size 0.2s ease;
+
+			@media (max-width: 1400px) {
+				font-size: 1.2rem;
+			}
 		}
 	}
 
@@ -65,6 +83,10 @@
 		height: 2.8rem;
 		display: flex;
 		align-items: center;
+
+		@media (max-width: 1400px) {
+			font-size: 1.25rem;
+		}
 	}
 
 	&__textarea {
@@ -75,6 +97,12 @@
 		padding: 0.5rem;
 		font-size: 1.4rem;
 		font-family: $font-nunito;
+		color: $white;
+
+		@media (max-width: 1400px) {
+			height: 9rem;
+			font-size: 1.2rem;
+		}
 
 		&:focus {
 			outline: 1px solid $yellow;
@@ -94,5 +122,10 @@
 		color: $yellow;
 		margin-left: auto;
 		cursor: pointer;
+
+		@media (max-width: 1400px) {
+			width: 12rem;
+			font-size: 1.2rem;
+		}
 	}
 }
