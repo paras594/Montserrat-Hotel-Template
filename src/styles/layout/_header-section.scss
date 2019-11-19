@@ -5,6 +5,10 @@
 	display: flex;
 	align-items: flex-end;
 
+	@media (max-width: 1400px) {
+		height: 42rem;
+	}
+
 	&__button {
 		margin: 0 auto 8rem auto;
 		position: relative;
@@ -20,10 +24,20 @@
 			width: 100%;
 			height: 100%;
 			transition: border-top 0.2s ease;
+
+			@media (max-width: 1400px) {
+				border-top: 0.8rem solid $yellow;
+				border-right: 5rem solid transparent;
+				border-bottom: 0.8rem solid transparent;
+				border-left: 5rem solid transparent;
+			}
 		}
 
 		&:hover::after {
 			border-top: 1rem solid $yellow-light;
+			@media (max-width: 1400px) {
+				border-top: 0.8rem solid $yellow-light;
+			}
 		}
 	}
 }

@@ -7,6 +7,10 @@
 		font-size: 2rem;
 		color: $gray-800;
 		letter-spacing: 1px;
+
+		@media (max-width: 1400px) {
+			font-size: 1.6rem;
+		}
 	}
 
 	&__icons {
@@ -16,6 +20,10 @@
 		height: 10rem;
 		width: 90%;
 		margin: 0 auto;
+
+		@media (max-width: 1400px) {
+			height: 8rem;
+		}
 	}
 
 	&__icon {
@@ -56,6 +64,10 @@
 		transform-origin: bottom;
 		opacity: 0;
 
+		@media (max-width: 1400px) {
+			height: 3rem;
+		}
+
 		.content {
 			border-top-right-radius: 50%;
 			border-top-left-radius: 50%;
@@ -71,6 +83,10 @@
 			font-weight: 700;
 			color: $white;
 			padding: 1rem;
+
+			@media (max-width: 1400px) {
+				font-size: 0.8rem;
+			}
 		}
 	}
 

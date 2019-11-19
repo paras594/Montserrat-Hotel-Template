@@ -14,11 +14,19 @@
 	&--small {
 		padding: 0.5rem 1rem;
 		font-size: 1rem;
+
+		@media (max-width: 1400px) {
+			font-size: 0.8rem;
+		}
 	}
 
 	&--bold {
 		font-size: 1.1rem;
 		font-weight: 700;
+
+		@media (max-width: 1400px) {
+			font-size: 1rem;
+		}
 	}
 
 	&--medium {
@@ -26,6 +34,12 @@
 		width: 12.5rem;
 		height: 2.8rem;
 		font-weight: 700;
+
+		@media (max-width: 1400px) {
+			font-size: 1.1rem;
+			width: 10rem;
+			height: 2.5rem;
+		}
 	}
 
 	&--block {

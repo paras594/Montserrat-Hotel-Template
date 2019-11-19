@@ -7,11 +7,19 @@
 	margin-bottom: 3rem;
 	text-align: center;
 
+	@media (max-width: 1400px) {
+		height: 41rem;
+	}
+
 	&__description {
 		grid-column: 1 / span 2;
 		grid-row: 1 / span 2;
 		outline: 3px solid $peach;
 		padding: 3.5rem 12rem;
+
+		@media (max-width: 1400px) {
+			padding: 2.8rem 10rem;
+		}
 	}
 
 	&__text {
@@ -20,6 +28,11 @@
 		text-align: justify;
 		color: $gray-800;
 		margin-top: 4rem;
+
+		@media (max-width: 1400px) {
+			font-size: 1.3rem;
+			margin-top: 3rem;
+		}
 	}
 
 	&__img {

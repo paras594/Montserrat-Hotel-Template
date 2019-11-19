@@ -12,6 +12,10 @@
 	opacity: 0;
 	transition: opacity 0.35s 0.3s ease, top 0.3s 0.3s ease;
 
+	@media (max-width: 1400px) {
+		font-size: 0.6rem;
+	}
+
 	a {
 		text-decoration: none;
 
