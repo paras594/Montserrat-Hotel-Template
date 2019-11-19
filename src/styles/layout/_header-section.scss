@@ -13,10 +13,10 @@
 			content: "";
 			position: absolute;
 			top: 100%;
-			border-top: 16px solid $yellow;
-			border-right: 100px solid transparent;
-			border-bottom: 16px solid transparent;
-			border-left: 100px solid transparent;
+			border-top: 1rem solid $yellow;
+			border-right: 6rem solid transparent;
+			border-bottom: 1rem solid transparent;
+			border-left: 6rem solid transparent;
 			width: 100%;
 			height: 100%;
 			transition: border-top 0.2s ease;

@@ -13,6 +13,14 @@
 		grid-auto-rows: 20rem;
 		gap: 1rem;
 		margin-bottom: 2rem;
+
+		@media (max-width: 1370px) {
+			grid-auto-rows: 18rem;
+		}
+
+		@media (max-width: 950px) {
+			grid-auto-rows: 14rem;
+		}
 	}
 
 	&__room {
@@ -39,7 +47,7 @@
 		width: 50%;
 		height: 100%;
 		opacity: 0;
-		background: rgba($white, 0.95);
+		background: rgba($white, 0.9);
 		padding: 1rem 0;
 		transition: left 0.4s ease-out, opacity 0.45s ease-in;
 
@@ -53,6 +61,19 @@
 			border-right: 3.5rem solid rgba($white, 0.9);
 			border-bottom: 10rem solid transparent;
 			border-left: 3.5rem solid transparent;
+			@media (max-width: 1370px) {
+				border-top-width: 9rem;
+				border-bottom-width: 9rem;
+				border-left-width: 2.5rem;
+				border-right-width: 2.5rem;
+			}
+
+			@media (max-width: 950px) {
+				border-top-width: 7rem;
+				border-bottom-width: 7rem;
+				border-left-width: 2rem;
+				border-right-width: 2rem;
+			}
 		}
 	}
 
@@ -62,17 +83,49 @@
 		font-size: 2rem;
 		letter-spacing: 1px;
 		margin: 1.2rem 0;
+
+		@media (max-width: 1370px) {
+			font-size: 1.8rem;
+		}
+
+		@media (max-width: 1130px) {
+			font-size: 1.5rem;
+		}
 	}
 
 	&__rate {
 		font-size: 1.7rem;
 		font-weight: 700;
 		letter-spacing: 1px;
+
+		@media (max-width: 1370px) {
+			font-size: 1.5rem;
+		}
+
+		@media (max-width: 1130px) {
+			font-size: 1.3rem;
+		}
+
+		@media (max-width: 950px){
+			font-size: 1rem;
+		}
 	}
 
 	&__price {
 		font-size: 2rem;
 		color: $yellow;
+
+		@media (max-width: 1370px) {
+			font-size: 1.7rem;
+		}
+
+		@media (max-width: 1130px) {
+			font-size: 1.4rem;
+		}
+
+		@media (max-width: 950px){
+			font-size: 1.2rem;
+		}
 	}
 
 	&__rating {
@@ -81,6 +134,18 @@
 		align-items: center;
 		margin: 1rem 0;
 		font-size: 1.6rem;
+
+		@media (max-width: 1370px) {
+			font-size: 1.4rem;
+		}
+
+		@media (max-width: 1130px) {
+			font-size: 1.2rem;
+		}
+
+		@media (max-width: 950px) {
+			font-size: 1rem;
+		}
 
 		span {
 			font-weight: 700;
@@ -95,10 +160,23 @@
 			margin: 0.1rem;
 			font-size: 1.8rem;
 			color: $yellow;
+
+			@media (max-width: 1370px) {
+				font-size: 1.6rem;
+				margin: 0;
+			}
+
+			@media (max-width: 950px){
+				font-size: 1.2rem;
+			}
 		}
 	}
 
 	&__btn {
 		margin-top: 2rem;
+
+		@media (max-width: 950px){
+			margin-top: 0;
+		}
 	}
 }

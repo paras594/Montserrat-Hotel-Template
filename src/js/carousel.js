@@ -30,7 +30,6 @@ class Carousel {
 	};
 
 	setSlidePosition = (slide, index) => {
-		console.log("setting position");
 		slide.style.left = this.slideWidth * index + "px";
 		slide.classList.add("carousel__slide");
 		slide.classList.remove("carousel__slide-fade");
@@ -66,7 +65,6 @@ class Carousel {
 	};
 
 	slideToNext = e => {
-		console.log("next clicked");
 		const currentSlide = this.track.querySelector(".current-slide");
 		let nextSlide = currentSlide.nextElementSibling;
 		const currentDot = this.dotsNav.querySelector(".current-slide");
@@ -75,12 +73,10 @@ class Carousel {
 
 		if (this.infiniteFadeEffect) {
 			this.resetInterval();
-			console.log("entered infinite fade effect block");
 			if (!nextSlide) {
 				nextSlide = this.slides[0];
 				nextDot = this.dots[0];
 				nextIndex = 0;
-				console.log(nextSlide, nextDot);
 			}
 		}
 
@@ -99,7 +95,6 @@ class Carousel {
 	};
 
 	slideToPrev = e => {
-		console.log("prev clicked");
 		const currentSlide = this.track.querySelector(".current-slide");
 		const prevSlide = currentSlide.previousElementSibling;
 		const currentDot = this.dotsNav.querySelector(".current-slide");
