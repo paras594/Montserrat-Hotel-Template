@@ -15,10 +15,6 @@
 		color: $yellow;
 		font-family: serif;
 
-		@media (max-width: 1130px) {
-			font-size: 2.2rem;
-		}
-
 		&--medium {
 			font-size: 2.6rem;
 		}
@@ -32,9 +28,5 @@
 		padding-bottom: 1rem;
 		font-size: 3.5rem;
 		color: $gray-800;
-
-		@media (max-width: 1370px) {
-			font-size: 3rem;
-		}
 	}
 }

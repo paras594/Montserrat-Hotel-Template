@@ -13,10 +13,6 @@ body {
 	background: $white;
 	min-height: 600px;
 	height: 100%;
-
-	@media (max-width: 1370px) {
-		font-size: 13px;
-	}
 }
 
 html {

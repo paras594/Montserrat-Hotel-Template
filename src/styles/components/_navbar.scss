@@ -13,10 +13,6 @@
 		font-size: 1.8rem;
 		font-family: serif;
 		letter-spacing: 1.5px;
-
-		@media (max-width: 950px) {
-			font-size: 1.5rem;
-		}
 	}
 
 	&__links {
@@ -32,10 +28,6 @@
 		font-family: $font-nunito;
 		font-weight: 700;
 		transition: color 0.2s ease;
-
-		@media (max-width: 950px) {
-			font-size: 1rem;
-		}
 
 		&:hover {
 			color: $yellow;
