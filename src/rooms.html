@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="container">
+				<div class="nav__logo">Montserrat</div>
+				<div class="nav__links">
+					<a href="./index.html" class="nav__link">Home</a>
+					<a href="#" class="nav__link nav__link--active">Rooms</a>
+					<a href="#" class="nav__link">Services</a>
+					<a href="#" class="nav__link">Blog</a>
+					<a href="#" class="nav__link">Contact</a>
+				</div>
+			</div>
+		</nav>
+		<header class="rooms__header">
+			<div class="heading">
+				<p class="heading__brand">Montserrat</p>
+				<h1 class="heading__title underline">
+					Hotel Rooms
+				</h1>
+			</div>
+		</header>
+		<section class="container">
+			<div>
+				<div>
+					<p>Sort:</p>
+					<select name="sort" id="sort">
+						<option value="">choose option</option>
+						<option value="name">By Name A-Z</option>
+						<option value="Rname">By Name Z-A</option>
+						<option value="rating">By Rating low to high</option>
+						<option value="Rrating">By Rating high to low</option>
+						<option value="price">By Price low to high</option>
+						<option value="Rprice">By Price high to low</option>
+					</select>
+				</div>
+				<div>
+					<p>Price:</p>
+					<input id="price" type="range" min="50" max="1000" step="50" />
+				</div>
+				<div>
+					<p>Rating:</p>
+					<select name="rating" id="rating">
+						<option value="">choose rating</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+				</div>
+			</div>
+			<hr />
+		</section>
+	</body>
+</html>
