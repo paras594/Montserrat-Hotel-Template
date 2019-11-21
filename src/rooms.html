@@ -5,6 +5,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Document</title>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+			defer
+		></script>
+		<script
+			nomodule=""
+			src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"
+			defer
+		></script>
 	</head>
 	<body>
 		<nav class="nav">
@@ -27,9 +37,9 @@
 				</h1>
 			</div>
 		</header>
-		<section class="container">
-			<div>
-				<div>
+		<section class="rooms__options container">
+			<div class="options">
+				<div class="options__sort options__option">
 					<p>Sort:</p>
 					<select name="sort" id="sort">
 						<option value="">choose option</option>
@@ -41,11 +51,11 @@
 						<option value="Rprice">By Price high to low</option>
 					</select>
 				</div>
-				<div>
+				<div class="options__price options__option">
 					<p>Price:</p>
 					<input id="price" type="range" min="50" max="1000" step="50" />
 				</div>
-				<div>
+				<div class="options__rating options__option">
 					<p>Rating:</p>
 					<select name="rating" id="rating">
 						<option value="">choose rating</option>
@@ -57,7 +67,179 @@
 					</select>
 				</div>
 			</div>
-			<hr />
+			<hr class="hr-black" />
 		</section>
+
+		<section class="rooms__data container">
+			<div class="room-card">
+				<div class="room-card__main">
+					<img
+						class="room-card__img"
+						src="./images/room-image-1.jpg"
+						alt="room image 1"
+					/>
+					<div class="room-card__details">
+						<h2 class="room-card__heading">Single Room</h2>
+						<div class="room-card__rating">
+							<span>Rating</span>
+							<div class="room-card__stars">
+								<ion-icon name="star"></ion-icon>
+								<ion-icon name="star"></ion-icon>
+								<ion-icon name="star"></ion-icon>
+								<ion-icon name="star"></ion-icon>
+								<ion-icon name="star-outline"></ion-icon>
+							</div>
+						</div>
+						<div class="room-card__price">
+							<span>Price:</span>
+							<p><span>$200</span> per night</p>
+						</div>
+					</div>
+					<div class="room-card__description">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+						nesciunt facilis, quisquam deserunt ipsa aliquam non. Quia
+						laboriosam adipisci ut, impedit voluptatum culpa molestiae,
+						velit deserunt magnam rerum illo necessitatibus.
+					</div>
+				</div>
+			</div>
+			<!-- end of one room block -->
+			<div class="room-card">
+				<div class="room-card__main">
+					<img
+						class="room-card__img"
+						src="./images/room-image-1.jpg"
+						alt="room image 1"
+					/>
+					<div class="room-card__details">
+						<h2 class="room-card__heading">Single Room</h2>
+						<div class="room-card__rating">
+							<span>Rating</span>
+							<div class="room-card__stars">
+								<ion-icon name="star"></ion-icon>
+								<ion-icon name="star"></ion-icon>
+								<ion-icon name="star"></ion-icon>
+								<ion-icon name="star"></ion-icon>
+								<ion-icon name="star-outline"></ion-icon>
+							</div>
+						</div>
+						<div class="room-card__price">
+							<span>Price:</span>
+							<p><span>$200</span> per night</p>
+						</div>
+					</div>
+					<div class="room-card__description">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+						nesciunt facilis, quisquam deserunt ipsa aliquam non. Quia
+						laboriosam adipisci ut, impedit voluptatum culpa molestiae,
+						velit deserunt magnam rerum illo necessitatibus.
+					</div>
+				</div>
+			</div>
+			<!-- end of one room block -->
+			<div class="room-card">
+				<div class="room-card__main">
+					<img
+						class="room-card__img"
+						src="./images/room-image-1.jpg"
+						alt="room image 1"
+					/>
+					<div class="room-card__details">
+						<h2 class="room-card__heading">Single Room</h2>
+						<div class="room-card__rating">
+							<span>Rating</span>
+							<div class="room-card__stars">
+								<ion-icon name="star"></ion-icon>
+								<ion-icon name="star"></ion-icon>
+								<ion-icon name="star"></ion-icon>
+								<ion-icon name="star"></ion-icon>
+								<ion-icon name="star-outline"></ion-icon>
+							</div>
+						</div>
+						<div class="room-card__price">
+							<span>Price:</span>
+							<p><span>$200</span> per night</p>
+						</div>
+					</div>
+					<div class="room-card__description">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+						nesciunt facilis, quisquam deserunt ipsa aliquam non. Quia
+						laboriosam adipisci ut, impedit voluptatum culpa molestiae,
+						velit deserunt magnam rerum illo necessitatibus.
+					</div>
+				</div>
+			</div>
+			<!-- end of one room block -->
+			<div class="room-card">
+				<div class="room-card__main">
+					<img
+						class="room-card__img"
+						src="./images/room-image-1.jpg"
+						alt="room image 1"
+					/>
+					<div class="room-card__details">
+						<h2 class="room-card__heading">Single Room</h2>
+						<div class="room-card__rating">
+							<span>Rating</span>
+							<div class="room-card__stars">
+								<ion-icon name="star"></ion-icon>
+								<ion-icon name="star"></ion-icon>
+								<ion-icon name="star"></ion-icon>
+								<ion-icon name="star"></ion-icon>
+								<ion-icon name="star-outline"></ion-icon>
+							</div>
+						</div>
+						<div class="room-card__price">
+							<span>Price:</span>
+							<p><span>$200</span> per night</p>
+						</div>
+					</div>
+					<div class="room-card__description">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+						nesciunt facilis, quisquam deserunt ipsa aliquam non. Quia
+						laboriosam adipisci ut, impedit voluptatum culpa molestiae,
+						velit deserunt magnam rerum illo necessitatibus.
+					</div>
+				</div>
+			</div>
+			<!-- end of one room block -->
+			<div class="room-card">
+				<div class="room-card__main">
+					<img
+						class="room-card__img"
+						src="./images/room-image-1.jpg"
+						alt="room image 1"
+					/>
+					<div class="room-card__details">
+						<h2 class="room-card__heading">Single Room</h2>
+						<div class="room-card__rating">
+							<span>Rating</span>
+							<div class="room-card__stars">
+								<ion-icon name="star"></ion-icon>
+								<ion-icon name="star"></ion-icon>
+								<ion-icon name="star"></ion-icon>
+								<ion-icon name="star"></ion-icon>
+								<ion-icon name="star-outline"></ion-icon>
+							</div>
+						</div>
+						<div class="room-card__price">
+							<span>Price:</span>
+							<p><span>$200</span> per night</p>
+						</div>
+					</div>
+					<div class="room-card__description">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+						nesciunt facilis, quisquam deserunt ipsa aliquam non. Quia
+						laboriosam adipisci ut, impedit voluptatum culpa molestiae,
+						velit deserunt magnam rerum illo necessitatibus.
+					</div>
+				</div>
+			</div>
+			<!-- end of one room block -->
+		</section>
+		<script
+			src="https://kit.fontawesome.com/f768ff876c.js"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>

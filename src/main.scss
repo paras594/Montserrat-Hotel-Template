@@ -12,6 +12,7 @@
 @import "./styles/components/tooltip";
 @import "./styles/components/carousel";
 @import "./styles/components/form";
+@import "./styles/components/room-card";
 
 // layouts and sections
 @import "./styles/layout/grid";
@@ -23,5 +24,7 @@
 @import "./styles/layout/blog-section";
 @import "./styles/layout/contact-section";
 @import "./styles/layout/footer-section";
+
 // rooms page
-@import "./styles/layout/rooms-header-section";
+@import "./styles/pages/rooms-page/rooms-header-section";
+@import "./styles/pages/rooms-page/rooms-options-section";
