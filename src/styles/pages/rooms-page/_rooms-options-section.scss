@@ -15,13 +15,13 @@
 			p {
 				margin-right: 0.7rem;
 				font-weight: 700;
-				font-size: 1.2rem;
+				font-size: 1.5rem;
 				letter-spacing: 1px;
 			}
 
 			select {
 				background: transparent;
-				font-size: 1rem;
+				font-size: 1.2rem;
 				padding: 0.3rem 0.3rem;
 				border: 1px solid $gray-400;
 			}
@@ -55,12 +55,12 @@
 			// for thumb
 			input[type="range"]::-webkit-slider-thumb {
 				-webkit-appearance: none;
-				height: 1.2rem;
-				width: 1.2rem;
+				height: 1.5rem;
+				width: 1.5rem;
 				border-radius: 50%;
 				background: $yellow;
 				cursor: pointer;
-				margin-top: -6.5px;
+				margin-top: -9px;
 				//margin-top: -0.5rem; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
 				// box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
 			}
@@ -138,6 +138,29 @@
 			}
 			input[type="range"]:focus::-ms-fill-upper {
 				background: $gray-500;
+			}
+		}
+
+		&__price {
+			// @include outline();
+
+			.price {
+				display: flex;
+				margin-left: 1rem;
+				letter-spacing: 1px;
+				font-size: 1.5rem;
+			}
+		}
+
+		&__reset-btn {
+			background: transparent;
+			border: 1px solid $gray-400;
+			padding: 0.3rem 1rem;
+			font-size: 1.1rem;
+			cursor: pointer;
+			transition: background 0.2s ease;
+			&:hover {
+				background: $gray-100;
 			}
 		}
 	}

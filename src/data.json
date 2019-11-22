@@ -1,24 +1,126 @@
 {
 	"data": [
 		{
-			"name": "paras",
-			"price": 100,
-			"rating": 4
+			"name": "Business Room",
+			"price": 600,
+			"rating": 4,
+			"img": "./images/room-image-1.jpg",
+			"facilities": [
+				"<ion-icon name=\"snow\" title=\"Air Conditioning\"></ion-icon>",
+				"<ion-icon name=\"wifi\" title=\"Wifi\"></ion-icon>",
+				"<ion-icon name=\"cafe\" title=\"Coffee Maker\"></ion-icon>"
+			],
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nesciunt facilis, quisquam deserunt ipsa aliquam non. Quia laboriosam adipisci ut, impedit voluptatum culpa molestiae, velit deserunt magnam rerum illo necessitatibus."
 		},
 		{
-			"name": "jai",
-			"price": 300,
-			"rating": 2
+			"name": "Business Room (separate beds)",
+			"price": 700,
+			"rating": 2,
+			"img": "./images/room-image-2.jpg",
+			"facilities": [
+				"<ion-icon name=\"tv\" title=\"TV\"></ion-icon>",
+				"<ion-icon name=\"snow\" title=\"Air Conditioning\"></ion-icon>",
+				"<ion-icon name=\"wifi\" title=\"Wifi\"></ion-icon>",
+				"<ion-icon name=\"cafe\" title=\"Coffee Maker\"></ion-icon>"
+			],
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nesciunt facilis, quisquam deserunt ipsa aliquam non. Quia laboriosam adipisci ut, impedit voluptatum culpa molestiae, velit deserunt magnam rerum illo necessitatibus."
 		},
 		{
-			"name": "abhishek",
-			"price": 200,
-			"rating": 5
+			"name": "King Bedroom",
+			"price": 500,
+			"rating": 5,
+			"img": "./images/room-image-3.jpg",
+			"facilities": [
+				"<ion-icon name=\"tv\" title=\"TV\"></ion-icon>",
+				"<ion-icon name=\"snow\" title=\"Air Conditioning\"></ion-icon>",
+				"<ion-icon name=\"wifi\" title=\"Wifi\"></ion-icon>"
+			],
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nesciunt facilis, quisquam deserunt ipsa aliquam non. Quia laboriosam adipisci ut, impedit voluptatum culpa molestiae, velit deserunt magnam rerum illo necessitatibus."
 		},
 		{
-			"name": "mukul",
+			"name": "Queen Bedroom",
 			"price": 400,
-			"rating": 3
+			"rating": 3,
+			"img": "./images/room-image-4.jpg",
+			"facilities": [
+				"<ion-icon name=\"tv\" title=\"TV\"></ion-icon>",
+				"<ion-icon name=\"snow\" title=\"Air Conditioning\"></ion-icon>",
+				"<ion-icon name=\"wifi\" title=\"Wifi\"></ion-icon>"
+			],
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nesciunt facilis, quisquam deserunt ipsa aliquam non. Quia laboriosam adipisci ut, impedit voluptatum culpa molestiae, velit deserunt magnam rerum illo necessitatibus."
+		},
+		{
+			"name": "Delux Room",
+			"price": 500,
+			"rating": 5,
+			"img": "",
+			"facilities": [
+				"<ion-icon name=\"tv\" title=\"TV\"></ion-icon>",
+				"<ion-icon name=\"snow\" title=\"Air Conditioning\"></ion-icon>",
+				"<ion-icon name=\"wifi\" title=\"Wifi\"></ion-icon>",
+				"<ion-icon name=\"cafe\" title=\"Coffee Maker\"></ion-icon>"
+			],
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nesciunt facilis, quisquam deserunt ipsa aliquam non. Quia laboriosam adipisci ut, impedit voluptatum culpa molestiae, velit deserunt magnam rerum illo necessitatibus."
+		},
+		{
+			"name": "Standard Room",
+			"price": 100,
+			"rating": 2,
+			"img": "",
+			"facilities": [
+				"<ion-icon name=\"tv\" title=\"TV\"></ion-icon>",
+				"<ion-icon name=\"wifi\" title=\"Wifi\"></ion-icon>"
+			],
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nesciunt facilis, quisquam deserunt ipsa aliquam non. Quia laboriosam adipisci ut, impedit voluptatum culpa molestiae, velit deserunt magnam rerum illo necessitatibus."
+		},
+		{
+			"name": "Standard Room (separate beds)",
+			"price": 200,
+			"rating": 2,
+			"img": "",
+			"facilities": [
+				"<ion-icon name=\"tv\" title=\"TV\"></ion-icon>",
+				"<ion-icon name=\"wifi\" title=\"Wifi\"></ion-icon>"
+			],
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nesciunt facilis, quisquam deserunt ipsa aliquam non. Quia laboriosam adipisci ut, impedit voluptatum culpa molestiae, velit deserunt magnam rerum illo necessitatibus."
+		},
+		{
+			"name": "Studio",
+			"price": 900,
+			"rating": 4,
+			"img": "",
+			"facilities": [
+				"<ion-icon name=\"tv\" title=\"TV\"></ion-icon>",
+				"<ion-icon name=\"snow\" title=\"Air Conditioning\"></ion-icon>",
+				"<ion-icon name=\"wifi\" title=\"Wifi\"></ion-icon>",
+				"<ion-icon name=\"cafe\" title=\"Coffee Maker\"></ion-icon>",
+				"<ion-icon name=\"volume-off\" title=\"Sound Proof\"></ion-icon>"
+			],
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nesciunt facilis, quisquam deserunt ipsa aliquam non. Quia laboriosam adipisci ut, impedit voluptatum culpa molestiae, velit deserunt magnam rerum illo necessitatibus."
+		},
+		{
+			"name": "Superior Room",
+			"price": 900,
+			"rating": 5,
+			"facilities": [
+				"<ion-icon name=\"tv\" title=\"TV\"></ion-icon>",
+				"<ion-icon name=\"snow\" title=\"Air Conditioning\"></ion-icon>",
+				"<ion-icon name=\"wifi\" title=\"Wifi\"></ion-icon>",
+				"<ion-icon name=\"cafe\" title=\"Coffee Maker\"></ion-icon>"
+			],
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nesciunt facilis, quisquam deserunt ipsa aliquam non. Quia laboriosam adipisci ut, impedit voluptatum culpa molestiae, velit deserunt magnam rerum illo necessitatibus."
+		},
+		{
+			"name": "Superior Room (separate beds)",
+			"price": 1000,
+			"rating": 5,
+			"facilities": [
+				"<ion-icon name=\"tv\" title=\"TV\"></ion-icon>",
+				"<ion-icon name=\"snow\" title=\"Air Conditioning\"></ion-icon>",
+				"<ion-icon name=\"wifi\" title=\"Wifi\"></ion-icon>",
+				"<ion-icon name=\"cafe\" title=\"Coffee Maker\"></ion-icon>"
+			],
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nesciunt facilis, quisquam deserunt ipsa aliquam non. Quia laboriosam adipisci ut, impedit voluptatum culpa molestiae, velit deserunt magnam rerum illo necessitatibus."
 		}
 	]
 }

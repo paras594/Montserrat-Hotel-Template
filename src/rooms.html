@@ -53,7 +53,15 @@
 				</div>
 				<div class="options__price options__option">
 					<p>Price:</p>
-					<input id="price" type="range" min="50" max="1000" step="50" />
+					<input
+						id="price"
+						type="range"
+						min="100"
+						max="1000"
+						step="50"
+						value="1000"
+					/>
+					<p class="price">$ <span id="input-price">1000</span></p>
 				</div>
 				<div class="options__rating options__option">
 					<p>Rating:</p>
@@ -66,177 +74,17 @@
 						<option value="5">5</option>
 					</select>
 				</div>
+				<div class="options__reset options__option">
+					<p>Reset Filters:</p>
+					<button class="options__reset-btn" id="options-reset">
+						Reset
+					</button>
+				</div>
 			</div>
 			<hr class="hr-black" />
 		</section>
 
-		<section class="rooms__data container">
-			<div class="room-card">
-				<div class="room-card__main">
-					<img
-						class="room-card__img"
-						src="./images/room-image-1.jpg"
-						alt="room image 1"
-					/>
-					<div class="room-card__details">
-						<h2 class="room-card__heading">Single Room</h2>
-						<div class="room-card__rating">
-							<span>Rating</span>
-							<div class="room-card__stars">
-								<ion-icon name="star"></ion-icon>
-								<ion-icon name="star"></ion-icon>
-								<ion-icon name="star"></ion-icon>
-								<ion-icon name="star"></ion-icon>
-								<ion-icon name="star-outline"></ion-icon>
-							</div>
-						</div>
-						<div class="room-card__price">
-							<span>Price:</span>
-							<p><span>$200</span> per night</p>
-						</div>
-					</div>
-					<div class="room-card__description">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-						nesciunt facilis, quisquam deserunt ipsa aliquam non. Quia
-						laboriosam adipisci ut, impedit voluptatum culpa molestiae,
-						velit deserunt magnam rerum illo necessitatibus.
-					</div>
-				</div>
-			</div>
-			<!-- end of one room block -->
-			<div class="room-card">
-				<div class="room-card__main">
-					<img
-						class="room-card__img"
-						src="./images/room-image-1.jpg"
-						alt="room image 1"
-					/>
-					<div class="room-card__details">
-						<h2 class="room-card__heading">Single Room</h2>
-						<div class="room-card__rating">
-							<span>Rating</span>
-							<div class="room-card__stars">
-								<ion-icon name="star"></ion-icon>
-								<ion-icon name="star"></ion-icon>
-								<ion-icon name="star"></ion-icon>
-								<ion-icon name="star"></ion-icon>
-								<ion-icon name="star-outline"></ion-icon>
-							</div>
-						</div>
-						<div class="room-card__price">
-							<span>Price:</span>
-							<p><span>$200</span> per night</p>
-						</div>
-					</div>
-					<div class="room-card__description">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-						nesciunt facilis, quisquam deserunt ipsa aliquam non. Quia
-						laboriosam adipisci ut, impedit voluptatum culpa molestiae,
-						velit deserunt magnam rerum illo necessitatibus.
-					</div>
-				</div>
-			</div>
-			<!-- end of one room block -->
-			<div class="room-card">
-				<div class="room-card__main">
-					<img
-						class="room-card__img"
-						src="./images/room-image-1.jpg"
-						alt="room image 1"
-					/>
-					<div class="room-card__details">
-						<h2 class="room-card__heading">Single Room</h2>
-						<div class="room-card__rating">
-							<span>Rating</span>
-							<div class="room-card__stars">
-								<ion-icon name="star"></ion-icon>
-								<ion-icon name="star"></ion-icon>
-								<ion-icon name="star"></ion-icon>
-								<ion-icon name="star"></ion-icon>
-								<ion-icon name="star-outline"></ion-icon>
-							</div>
-						</div>
-						<div class="room-card__price">
-							<span>Price:</span>
-							<p><span>$200</span> per night</p>
-						</div>
-					</div>
-					<div class="room-card__description">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-						nesciunt facilis, quisquam deserunt ipsa aliquam non. Quia
-						laboriosam adipisci ut, impedit voluptatum culpa molestiae,
-						velit deserunt magnam rerum illo necessitatibus.
-					</div>
-				</div>
-			</div>
-			<!-- end of one room block -->
-			<div class="room-card">
-				<div class="room-card__main">
-					<img
-						class="room-card__img"
-						src="./images/room-image-1.jpg"
-						alt="room image 1"
-					/>
-					<div class="room-card__details">
-						<h2 class="room-card__heading">Single Room</h2>
-						<div class="room-card__rating">
-							<span>Rating</span>
-							<div class="room-card__stars">
-								<ion-icon name="star"></ion-icon>
-								<ion-icon name="star"></ion-icon>
-								<ion-icon name="star"></ion-icon>
-								<ion-icon name="star"></ion-icon>
-								<ion-icon name="star-outline"></ion-icon>
-							</div>
-						</div>
-						<div class="room-card__price">
-							<span>Price:</span>
-							<p><span>$200</span> per night</p>
-						</div>
-					</div>
-					<div class="room-card__description">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-						nesciunt facilis, quisquam deserunt ipsa aliquam non. Quia
-						laboriosam adipisci ut, impedit voluptatum culpa molestiae,
-						velit deserunt magnam rerum illo necessitatibus.
-					</div>
-				</div>
-			</div>
-			<!-- end of one room block -->
-			<div class="room-card">
-				<div class="room-card__main">
-					<img
-						class="room-card__img"
-						src="./images/room-image-1.jpg"
-						alt="room image 1"
-					/>
-					<div class="room-card__details">
-						<h2 class="room-card__heading">Single Room</h2>
-						<div class="room-card__rating">
-							<span>Rating</span>
-							<div class="room-card__stars">
-								<ion-icon name="star"></ion-icon>
-								<ion-icon name="star"></ion-icon>
-								<ion-icon name="star"></ion-icon>
-								<ion-icon name="star"></ion-icon>
-								<ion-icon name="star-outline"></ion-icon>
-							</div>
-						</div>
-						<div class="room-card__price">
-							<span>Price:</span>
-							<p><span>$200</span> per night</p>
-						</div>
-					</div>
-					<div class="room-card__description">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-						nesciunt facilis, quisquam deserunt ipsa aliquam non. Quia
-						laboriosam adipisci ut, impedit voluptatum culpa molestiae,
-						velit deserunt magnam rerum illo necessitatibus.
-					</div>
-				</div>
-			</div>
-			<!-- end of one room block -->
-		</section>
+		<section class="rooms__data container" id="rooms-data"></section>
 		<script
 			src="https://kit.fontawesome.com/f768ff876c.js"
 			crossorigin="anonymous"
