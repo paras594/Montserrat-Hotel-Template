@@ -5,7 +5,12 @@ const ratingOption = document.querySelector("#rating");
 const roomsContainer = document.querySelector("#rooms-data");
 const inputPrice = document.querySelector("#input-price");
 const optionsResetBtn = document.querySelector("#options-reset");
-console.log(optionsResetBtn);
+import "../images/room-image-7.jpg";
+import "../images/room-image-8.jpg";
+import "../images/room-image-9.jpg";
+import "../images/room-image-10.jpg";
+import "../images/room-image-11.jpg";
+import "../images/room-image-12.jpg";
 
 if (priceSlider) {
 	const data = json.data;
@@ -99,11 +104,8 @@ if (priceSlider) {
 					
 						</div>
 					</div>
-					<div class="room-card__facilities">
-						<ion-icon name="wifi" title="Wifi"></ion-icon>
-						<ion-icon name="snow" title="Air Conditioning"></ion-icon>
-						<ion-icon name="tv" title="TV"></ion-icon>
-						<ion-icon name="cafe" title="Coffee Maker"></ion-icon>
+					<div class="room-card__facilities" id="room-card__facilities">
+						${item.facilities.join("")}
 					</div>
 					<div class="room-card__price">
 						<span>Price:</span>
@@ -117,15 +119,15 @@ if (priceSlider) {
 
 			let starsContainer = roomCard.querySelector(".room-card__stars");
 
-			let counter = 0;
-			while (counter < item.rating) {
+			let starCounter = 0;
+			while (starCounter < item.rating) {
 				starsContainer.innerHTML += `<ion-icon name="star"></ion-icon>`;
-				counter++;
+				starCounter++;
 			}
 
-			while (counter < 5) {
+			while (starCounter < 5) {
 				starsContainer.innerHTML += `<ion-icon name="star-outline"></ion-icon>`;
-				counter++;
+				starCounter++;
 			}
 
 			roomsContainer.appendChild(roomCard);
