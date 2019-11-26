@@ -1,16 +1,16 @@
 import json from "../data.json";
-const priceSlider = document.querySelector("#price");
-const sortOption = document.querySelector("#sort");
-const ratingOption = document.querySelector("#rating");
-const roomsContainer = document.querySelector("#rooms-data");
-const inputPrice = document.querySelector("#input-price");
-const optionsResetBtn = document.querySelector("#options-reset");
 import "../images/room-image-7.jpg";
 import "../images/room-image-8.jpg";
 import "../images/room-image-9.jpg";
 import "../images/room-image-10.jpg";
 import "../images/room-image-11.jpg";
 import "../images/room-image-12.jpg";
+const priceSlider = document.querySelector("#price");
+const sortOption = document.querySelector("#sort");
+const ratingOption = document.querySelector("#rating");
+const roomsContainer = document.querySelector("#rooms-data");
+const inputPrice = document.querySelector("#input-price");
+const optionsResetBtn = document.querySelector("#options-reset");
 
 if (priceSlider) {
 	const data = json.data;
