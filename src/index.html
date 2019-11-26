@@ -17,17 +17,18 @@
 		></script>
 	</head>
 	<body>
-		<nav class="nav">
+		<a href="#top-section" class="to-top-button" style="display: none;"><i class="fas fa-angle-up"></i></a>
+		<nav class="nav" id="top-section">
 			<div class="container">
 				<div class="nav__logo">Montserrat</div>
 				<div class="nav__links">
 					<a href="./index.html" class="nav__link nav__link--active"
 						>Home</a
 					>
-					<a href="#" class="nav__link">Rooms</a>
-					<a href="#" class="nav__link">Services</a>
-					<a href="#" class="nav__link">Blog</a>
-					<a href="#" class="nav__link">Contact</a>
+					<a href="#rooms-section" class="nav__link">Rooms</a>
+					<a href="#services-section" class="nav__link">Services</a>
+					<a href="#blog-section" class="nav__link">Blog</a>
+					<a href="#contact-section" class="nav__link">Contact</a>
 				</div>
 			</div>
 		</nav>
@@ -118,7 +119,7 @@
 		</section>
 		<!-- end of welcome section -->
 
-		<section class="rooms">
+		<section class="rooms" id="rooms-section">
 			<div class="heading" data-aos="fade-up">
 				<p class="heading__brand">Montserrat</p>
 				<h1 class="heading__title underline">
@@ -291,7 +292,7 @@
 		</section>
 		<!-- end of rooms section -->
 
-		<section class="services">
+		<section class="services" id="services-section">
 			<div class="container border-bottom">
 				<div class="heading" data-aos="fade-up">
 					<p class="heading__brand">Montserrat</p>
@@ -474,7 +475,7 @@
 		</section>
 		<!-- end of testimony section -->
 
-		<section class="blogs container" data-aos="fade-up">
+		<section class="blogs container" id="blog-section" data-aos="fade-up">
 			<div class="heading">
 				<p class="heading__brand">Montserrat</p>
 				<h1 class="heading__title">
@@ -561,7 +562,11 @@
 		</section>
 		<!-- end of blogs -->
 
-		<section class="contact container border-bottom" data-aos="fade-up">
+		<section
+			class="contact container border-bottom"
+			id="contact-section"
+			data-aos="fade-up"
+		>
 			<div class="heading">
 				<p class="heading__brand">Montserrat</p>
 				<h1 class="heading__title">

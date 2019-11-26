@@ -7,6 +7,20 @@ import "./js/header-carousel";
 import "./js/blog-carousel";
 import "./js/rooms";
 
+const toTopBtn = document.querySelector(".to-top-button");
+// toTopBtn.style.display = "none";
+
+if (window.scrollY > window.innerHeight / 2) toTopBtn.style.display = "";
+
+window.addEventListener("scroll", () => {
+	console.log(window.scrollY, window.innerHeight / 2);
+	if (window.scrollY > window.innerHeight / 2) {
+		toTopBtn.style.display = "";
+	} else if (window.scrollY < window.innerHeight / 2) {
+		toTopBtn.style.display = "none";
+	}
+});
+
 AOS.init({
 	offset: 200,
 	duration: 700
