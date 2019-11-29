@@ -13,6 +13,17 @@ body {
 	background: $white;
 	min-height: 600px;
 	height: 100%;
+
+	@media (max-width: 1150px) {
+		/* 
+			font-size: calc(
+				min size + (max size - min size) * (
+					(100vw - min vw) / (max vw - min vw)
+				)
+			);
+		*/
+		font-size: calc(14px + (15 - 13.5) * ((100vw - 950px) / (1150 - 950)));
+	}
 }
 
 html {
