@@ -17,6 +17,11 @@
 			width: 25rem;
 			height: 35rem;
 		}
+
+		@media (max-width: 949px) {
+			width: 20rem;
+			height: 28rem;
+		}
 	}
 
 	&__links {

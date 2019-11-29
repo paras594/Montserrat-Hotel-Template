@@ -7,6 +7,10 @@
 		height: 4rem;
 	}
 
+	@media (max-width: 949px) {
+		height: 3.5rem;
+	}
+
 	.container {
 		display: flex;
 		height: 100%;
@@ -28,6 +32,10 @@
 		width: 40%;
 		display: flex;
 		justify-content: space-between;
+
+		@media (max-width: 949px) {
+			width: 55%;
+		}
 	}
 
 	&__link {

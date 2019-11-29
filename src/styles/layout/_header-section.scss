@@ -13,6 +13,10 @@
 		margin: 0 auto 8rem auto;
 		position: relative;
 
+		@media (max-width: 949px) {
+			margin: 0 auto 6rem auto;
+		}
+
 		&::after {
 			content: "";
 			position: absolute;

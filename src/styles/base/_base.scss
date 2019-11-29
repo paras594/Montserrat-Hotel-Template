@@ -22,7 +22,11 @@ body {
 				)
 			);
 		*/
-		font-size: calc(14px + (15 - 13.5) * ((100vw - 950px) / (1150 - 950)));
+		font-size: calc(14px + (15 - 13.5) * ((100vmax - 950px) / (1150 - 950)));
+	}
+
+	@media (max-width: 950px) {
+		font-size: 14px;
 	}
 }
 

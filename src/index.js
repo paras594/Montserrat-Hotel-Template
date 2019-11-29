@@ -8,7 +8,6 @@ import "./js/blog-carousel";
 import "./js/rooms";
 
 const toTopBtn = document.querySelector(".to-top-button");
-// toTopBtn.style.display = "none";
 
 if (window.scrollY > window.innerHeight / 2) toTopBtn.style.display = "";
 
@@ -22,6 +21,6 @@ window.addEventListener("scroll", () => {
 });
 
 AOS.init({
-	offset: 200,
+	offset: 180,
 	duration: 700
 });

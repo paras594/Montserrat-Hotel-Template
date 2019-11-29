@@ -11,6 +11,10 @@
 		@media (max-width: 1400px) {
 			font-size: 1.6rem;
 		}
+
+		@media (max-width: 949px) {
+			font-size: 1.3rem;
+		}
 	}
 
 	&__icons {
@@ -24,10 +28,15 @@
 		@media (max-width: 1400px) {
 			height: 8rem;
 		}
+
+		@media (max-width: 949px) {
+			flex-wrap: wrap;
+			height: auto;
+		}
 	}
 
 	&__icon {
-		flex: 1 1 0;
+		flex: 1 1 40%;
 		margin: 0 0.5rem;
 		display: flex;
 		justify-content: center;
@@ -35,6 +44,10 @@
 		position: relative;
 		background: $gray-200;
 		z-index: 99;
+
+		@media (max-width: 949px) {
+			margin: 1.5rem 0.5rem;
+		}
 
 		&:hover .tooltip {
 			opacity: 1;
@@ -72,6 +85,10 @@
 			height: 2.8rem;
 		}
 
+		@media (max-width: 948px) {
+			height: 3.2rem;
+		}
+
 		.content {
 			border-top-right-radius: 50%;
 			border-top-left-radius: 50%;
@@ -91,10 +108,20 @@
 			@media (max-width: 1400px) {
 				font-size: 0.8rem;
 			}
+
+			@media (max-width: 949px) {
+				font-size: 1.1rem;
+				height: 110%;
+				padding: 0.8rem;
+			}
 		}
 	}
 
 	&__button {
 		margin: 3rem 0;
+
+		@media (max-width: 949px) {
+			margin: 1.8rem 0;
+		}
 	}
 }
