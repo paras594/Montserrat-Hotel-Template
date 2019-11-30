@@ -27,6 +27,11 @@
 		@media (max-width: 1400px) {
 			font-size: 1rem;
 		}
+
+		@media (max-width: 750px) {
+			font-size: 1rem;
+			padding: 0.6rem 1.4rem;
+		}
 	}
 
 	&--medium {
@@ -39,6 +44,10 @@
 			font-size: 1.1rem;
 			width: 10rem;
 			height: 2.5rem;
+		}
+
+		@media (max-width: 949px) {
+			width: 9.5rem;
 		}
 	}
 

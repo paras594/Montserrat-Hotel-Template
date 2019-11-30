@@ -15,6 +15,14 @@
 		height: 35rem;
 	}
 
+	@media (max-width: 751px) {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		height: auto;
+		margin-top: 4rem;
+		margin-bottom: 5rem;
+	}
+
 	&__description {
 		grid-column: 1 / span 2;
 		grid-row: 1 / span 2;
@@ -31,6 +39,16 @@
 
 		@media (max-width: 920px) {
 			padding: 1.4rem 7rem;
+		}
+
+		@media (max-width: 749px) {
+			grid-column: 1 / -1;
+			grid-row: 1 / -1;
+			padding: 3rem 7rem;
+		}
+
+		@media (max-width: 565px) {
+			padding: 3rem 4.5rem;
 		}
 	}
 
@@ -55,6 +73,10 @@
 			line-height: 2.2rem;
 			font-size: 1.1rem;
 		}
+
+		@media (max-width: 750px) {
+			margin: 1.8rem 0 2rem 0;
+		}
 	}
 
 	&__img {
@@ -65,5 +87,9 @@
 		object-fit: cover;
 		object-position: 10%;
 		box-shadow: 0 2px 16px rgba($black, 0.3);
+
+		@media (max-width: 750px) {
+			display: none;
+		}
 	}
 }

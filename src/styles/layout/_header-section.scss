@@ -1,12 +1,13 @@
 .header {
-	height: 50rem;
+	min-height: 50rem;
+	height: 100vmin;
 	position: relative;
 	z-index: 1;
 	display: flex;
 	align-items: flex-end;
 
 	@media (max-width: 1400px) {
-		height: 42rem;
+		min-height: 42rem;
 	}
 
 	&__button {

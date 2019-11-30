@@ -24,3 +24,32 @@ AOS.init({
 	offset: 180,
 	duration: 700
 });
+
+const serviceItems = document.querySelectorAll(".services__icon");
+const roomsList = document.querySelectorAll(".rooms__room");
+
+if (window.innerWidth <= 580) {
+	serviceItems.forEach(item => {
+		item.dataset.aosDelay = 0;
+	});
+}
+
+if (window.innerWidth <= 640) {
+	roomsList.forEach(room => {
+		room.dataset.aosDelay = 0;
+	});
+}
+
+window.onresize = () => {
+	if (window.innerWidth >= 580) {
+		serviceItems.forEach(item => {
+			item.dataset.aosDelay = 0;
+		});
+	}
+
+	if (window.innerWidth <= 640) {
+		roomsList.forEach(room => {
+			room.dataset.aosDelay = 0;
+		});
+	}
+};

@@ -19,6 +19,11 @@
 			width: 32rem;
 			height: 36rem;
 		}
+
+		@media (max-width: 751px) {
+			width: 75%;
+			height: 34rem;
+		}
 	}
 
 	&__track-container {
@@ -43,12 +48,18 @@
 		flex-direction: column;
 		background: $gray-200;
 		padding: 2.5rem;
+		justify-content: flex-start;
+
+		@media (max-width: 750px) {
+			padding: 1.8rem;
+		}
 	}
 
 	&__images {
 		height: 25rem;
 		width: 100%;
 		object-fit: cover;
+		margin-top: 0;
 
 		@media (max-width: 1400px) {
 			height: 22rem;
@@ -56,6 +67,11 @@
 
 		@media (max-width: 949px) {
 			height: 18rem;
+		}
+
+		@media (max-width: 750px) {
+			// height: 16.5rem;
+			height: auto;
 		}
 	}
 
@@ -70,6 +86,10 @@
 
 			@media (max-width: 1400px) {
 				font-size: 1rem;
+			}
+
+			@media (max-width: 750px) {
+				font-size: 0.8rem;
 			}
 		}
 	}
@@ -102,6 +122,10 @@
 
 		@media (max-width: 1400px) {
 			font-size: 2.5rem;
+		}
+
+		@media (max-width: 750px) {
+			font-size: 2.2rem;
 		}
 	}
 
