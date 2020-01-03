@@ -13,6 +13,7 @@ const toTopBtn = document.querySelector(".to-top-button");
 if (window.scrollY > window.innerHeight / 2) toTopBtn.style.display = "";
 
 window.addEventListener("scroll", () => {
+	if (!toTopBtn) return;
 	if (window.scrollY > window.innerHeight / 2) {
 		toTopBtn.style.display = "";
 	} else if (window.scrollY < window.innerHeight / 2) {
