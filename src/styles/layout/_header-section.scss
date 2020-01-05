@@ -10,6 +10,10 @@
 		min-height: 42rem;
 	}
 
+	@media (max-width: 749px) {
+		min-height: 40rem;
+	}
+
 	&__button {
 		margin: 0 auto 8rem auto;
 		position: relative;
