@@ -20,6 +20,10 @@
 		font-size: 0.8rem;
 	}
 
+	@media (max-width: 749px) {
+		display: none;
+	}
+
 	a {
 		text-decoration: none;
 

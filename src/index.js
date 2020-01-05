@@ -10,6 +10,10 @@ import "./js/rooms";
 
 const toTopBtn = document.querySelector(".to-top-button");
 
+const size = document.querySelector(".size");
+
+size.innerHTML = window.innerWidth;
+
 if (window.scrollY > window.innerHeight / 2) toTopBtn.style.display = "";
 
 window.addEventListener("scroll", () => {

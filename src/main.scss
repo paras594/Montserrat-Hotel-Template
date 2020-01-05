@@ -29,3 +29,12 @@
 // rooms page
 @import "./styles/pages/rooms-page/rooms-header-section";
 @import "./styles/pages/rooms-page/rooms-options-section";
+
+.size {
+	position: absolute;
+	top: 1%;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 9999;
+	color: blue;
+}
