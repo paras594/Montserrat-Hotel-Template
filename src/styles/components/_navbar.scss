@@ -35,7 +35,7 @@
 		justify-content: space-between;
 
 		&.open {
-			height: 20rem;
+			height: 16rem;
 			border-top: 1px solid $gray-300;
 		}
 
@@ -72,7 +72,7 @@
 		}
 
 		@media (max-width: 749px) {
-			font-size: 1.3rem;
+			font-size: 1.15rem;
 			width: 85%;
 			margin: 0 auto;
 		}

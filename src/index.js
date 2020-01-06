@@ -40,6 +40,10 @@ if (window.innerWidth <= 580) {
 }
 
 if (window.innerWidth <= 640) {
+	AOS.init({
+		offset: 80,
+		duration: 700
+	});
 	roomsList.forEach(room => {
 		room.dataset.aosDelay = 0;
 	});

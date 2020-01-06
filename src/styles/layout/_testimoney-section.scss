@@ -4,6 +4,11 @@
 	&__container {
 		margin: 3rem 0;
 		padding: 4rem 0;
+
+		@media (max-width: 641px) {
+			padding: 2.5rem 0;
+			margin: 1.5rem 0;
+		}
 	}
 
 	&__items {
@@ -28,6 +33,10 @@
 			flex: 0 1 18rem;
 			margin: 1.5rem 1rem;
 		}
+
+		@media (max-width: 700px) {
+			flex: 0 1 13rem;
+		}
 	}
 
 	&__img-frame {
@@ -39,6 +48,11 @@
 		@media (max-width: 1400px) {
 			width: 9rem;
 			height: 9rem;
+		}
+
+		@media (max-width: 641px) {
+			width: 7rem;
+			height: 7rem;
 		}
 
 		img {

@@ -63,7 +63,7 @@
 	&__form {
 		flex: 1 1 50%;
 		padding: 5rem 8rem 3rem 8rem;
-		background: $peach-dark;
+		background: rgba($peach-dark, 0.8);
 
 		@media (max-width: 1400px) {
 			padding: 4rem 4rem 2.5rem 3.8rem;
