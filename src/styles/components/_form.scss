@@ -90,14 +90,16 @@
 		font-family: $font-nunito;
 		color: $white;
 
+		transition: border 0.2s ease-in;
+
 		@media (max-width: 1400px) {
 			height: 9rem;
 			font-size: 1.2rem;
 		}
 
 		&:focus {
-			outline: 1px solid $black;
-			outline-offset: 0.2rem;
+			border-color: $black;
+			outline: none;
 		}
 	}
 

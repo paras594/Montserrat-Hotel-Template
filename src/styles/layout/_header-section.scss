@@ -40,6 +40,13 @@
 				border-bottom: 0.8rem solid transparent;
 				border-left: 5rem solid transparent;
 			}
+
+			@media (max-width: 450px) {
+				border-top: 0.6rem solid $yellow;
+				border-right: 4rem solid transparent;
+				border-bottom: 0.6rem solid transparent;
+				border-left: 4rem solid transparent;
+			}
 		}
 
 		&:hover::after {

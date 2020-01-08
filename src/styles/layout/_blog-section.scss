@@ -2,6 +2,10 @@
 	text-align: center;
 	margin: 8rem auto;
 
+	@media (max-width: 450px) {
+		margin: 3rem auto 5rem auto;
+	}
+
 	&__carousel {
 		position: relative;
 		margin: 2rem auto;
@@ -22,7 +26,11 @@
 
 		@media (max-width: 751px) {
 			width: 75%;
-			height: 34rem;
+			height: 32rem;
+		}
+
+		@media (max-width: 451px) {
+			width: 95%;
 		}
 	}
 
@@ -53,6 +61,10 @@
 		@media (max-width: 750px) {
 			padding: 1.8rem;
 		}
+
+		@media (max-width: 450px) {
+			padding: 1rem;
+		}
 	}
 
 	&__images {
@@ -70,8 +82,11 @@
 		}
 
 		@media (max-width: 750px) {
-			// height: 16.5rem;
-			height: auto;
+			height: 16rem !important;
+		}
+
+		@media (max-width: 450px) {
+			height: 14rem;
 		}
 	}
 
@@ -103,6 +118,10 @@
 		@media (max-width: 1400px) {
 			font-size: 1.2rem;
 		}
+
+		@media (max-width: 450px) {
+			font-size: 1rem;
+		}
 	}
 
 	&__button {
@@ -127,14 +146,25 @@
 		@media (max-width: 750px) {
 			font-size: 2.2rem;
 		}
+
+		@media (max-width: 451px) {
+			font-size: 1.8rem;
+		}
 	}
 
 	&__button-left {
 		right: 105%;
+		@media (max-width: 451px) {
+			right: 103%;
+		}
 	}
 
 	&__button-right {
 		left: 105%;
+
+		@media (max-width: 451px) {
+			left: 103%;
+		}
 	}
 
 	&__nav {
@@ -155,6 +185,11 @@
 		@media (max-width: 1400px) {
 			width: 1rem;
 			height: 1rem;
+		}
+
+		@media (max-width: 450px) {
+			width: 0.6rem;
+			height: 0.6rem;
 		}
 
 		&.current-slide {

@@ -23,6 +23,11 @@
 		margin-bottom: 5rem;
 	}
 
+	@media (max-width: 450px) {
+		margin-top: 2.5rem;
+		margin-bottom: 3rem;
+	}
+
 	&__description {
 		grid-column: 1 / span 2;
 		grid-row: 1 / span 2;
@@ -50,6 +55,10 @@
 		@media (max-width: 565px) {
 			padding: 3rem 4.5rem;
 		}
+
+		@media (max-width: 501px) {
+			padding: 1.5rem 2.5rem;
+		}
 	}
 
 	&__text {
@@ -76,6 +85,11 @@
 
 		@media (max-width: 750px) {
 			margin: 1.8rem 0 2rem 0;
+		}
+
+		@media (max-width: 501px) {
+			font-size: 1rem;
+			line-height: 1.8rem;
 		}
 	}
 

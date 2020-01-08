@@ -2,6 +2,10 @@
 	text-align: center;
 	margin: 6rem 0;
 
+	@media (max-width: 500px) {
+		margin: 3rem 0;
+	}
+
 	&__description {
 		margin: 2.5rem 0;
 		font-size: 2rem;
@@ -19,6 +23,10 @@
 		@media (max-width: 640px) {
 			margin: 1.8rem 0;
 			font-size: 1.1rem;
+		}
+
+		@media (max-width: 450px) {
+			font-size: 0.9rem !important;
 		}
 	}
 
@@ -45,6 +53,12 @@
 			// align-items: center;
 			width: 100%;
 		}
+
+		@media (max-width: 380px) {
+			flex-direction: column;
+			height: auto;
+			align-items: center;
+		}
 	}
 
 	&__icon {
@@ -55,7 +69,7 @@
 		align-items: center;
 		position: relative;
 		background: $gray-200;
-		z-index: 99;
+		z-index: 40;
 
 		@media (max-width: 949px) {
 			margin: 1.5rem 0.5rem;
@@ -65,6 +79,11 @@
 			flex: 0 1 1;
 			width: 22rem;
 			margin: 0.8rem 0.5rem;
+		}
+
+		@media (max-width: 380px) {
+			width: 70%;
+			margin: 0.4rem 0;
 		}
 
 		&:hover .tooltip {
@@ -163,6 +182,10 @@
 
 		@media (max-width: 580px) {
 			margin: 3rem 0;
+		}
+
+		@media (max-width: 451px) {
+			margin: 1.5rem 0 2rem 0;
 		}
 	}
 }
