@@ -8,22 +8,7 @@ import "./js/header-carousel";
 import "./js/blog-carousel";
 import "./js/rooms";
 
-const toTopBtn = document.querySelector(".to-top-button");
-
 const size = document.querySelector(".size");
-
-size.innerHTML = window.innerWidth;
-
-if (window.scrollY > window.innerHeight / 2) toTopBtn.style.display = "";
-
-window.addEventListener("scroll", () => {
-	if (!toTopBtn) return;
-	if (window.scrollY > window.innerHeight / 2) {
-		toTopBtn.style.display = "";
-	} else if (window.scrollY < window.innerHeight / 2) {
-		toTopBtn.style.display = "none";
-	}
-});
 
 AOS.init({
 	offset: 180,
@@ -32,6 +17,7 @@ AOS.init({
 
 const serviceItems = document.querySelectorAll(".services__icon");
 const roomsList = document.querySelectorAll(".rooms__room");
+const carouselSlides = document.querySelectorAll(".carousel__slide");
 
 if (window.innerWidth <= 580) {
 	serviceItems.forEach(item => {
@@ -50,6 +36,10 @@ if (window.innerWidth <= 640) {
 }
 
 window.onresize = () => {
+	carouselSlides.forEach(slide => {
+		slide.style.width = "100%";
+	});
+
 	if (window.innerWidth >= 580) {
 		serviceItems.forEach(item => {
 			item.dataset.aosDelay = 0;

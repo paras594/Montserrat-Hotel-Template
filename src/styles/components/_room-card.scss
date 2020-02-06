@@ -1,11 +1,27 @@
 .room-card {
 	margin: 2rem 1rem 3rem 1rem;
+
+	@media (max-width: 948px) {
+		margin: 1.5rem 0 1rem 0;
+	}
+
+	@media (max-width: 800px) {
+		border: 1px solid $gray-300;
+	}
+
 	&__main {
 		// @include outline();
 		display: grid;
 		grid-template-areas:
 			"img details"
 			"img description";
+
+		@media (max-width: 800px) {
+			grid-template-areas:
+				"img"
+				"details"
+				"description";
+		}
 	}
 
 	&__img {
@@ -13,6 +29,20 @@
 		width: 30rem;
 		height: 100%;
 		object-fit: cover;
+
+		@media (max-width: 948px) {
+			width: 40vw;
+		}
+
+		@media (max-width: 800px) {
+			width: 100%;
+			height: calc(80vmin / 2.5);
+		}
+
+		@media (max-width: 650px) {
+			height: calc(80vmin / 1.75);
+			min-height: 13rem;
+		}
 	}
 
 	&__details {
@@ -21,11 +51,23 @@
 		// align-self: start;
 		// @include outline();
 		height: max-content;
+
+		@media (max-width: 800px) {
+			padding: 0.6rem 0.8rem;
+		}
 	}
 
 	&__heading {
 		font-size: 3rem;
 		margin-bottom: 0.5rem;
+
+		@media (max-width: 1400px) {
+			font-size: 1.8rem;
+		}
+
+		@media (max-width: 800px) {
+			font-size: 1.4rem;
+		}
 	}
 
 	&__rating {
@@ -36,6 +78,11 @@
 			font-size: 1.8rem;
 			font-weight: bold;
 			margin-right: 0.8rem;
+
+			@media (max-width: 1400px) {
+				font-size: 1.2rem;
+				margin-right: 0.4rem;
+			}
 		}
 	}
 
@@ -45,6 +92,10 @@
 		ion-icon {
 			font-size: 1.9rem;
 			color: $yellow;
+
+			@media (max-width: 1400px) {
+				font-size: 1.4rem;
+			}
 		}
 	}
 
@@ -65,19 +116,37 @@
 		margin-top: 1rem;
 		display: flex;
 		align-items: center;
+
+		@media (max-width: 1400px) {
+			margin-top: 0.6rem;
+		}
+
 		> span {
 			font-size: 1.8rem;
 			font-weight: bold;
 			margin-right: 0.8rem;
+
+			@media (max-width: 1400px) {
+				font-size: 1.2rem;
+				margin-right: 0.4rem;
+			}
 		}
 
 		p {
 			font-size: 1.4rem;
 			font-weight: bold;
 
+			@media (max-width: 1400px) {
+				font-size: 1rem;
+			}
+
 			span {
 				color: $yellow;
 				font-size: 1.8rem;
+
+				@media (max-width: 1400px) {
+					font-size: 1.2rem;
+				}
 			}
 		}
 	}
@@ -90,5 +159,16 @@
 		line-height: 1.6;
 		color: $gray-900;
 		// @include outline();
+
+		@media (max-width: 1400px) {
+			font-size: 1rem;
+		}
+
+		@media (max-width: 800px) {
+			padding-left: 0.8rem;
+			padding-right: 0.8rem;
+			padding-bottom: 1rem;
+			padding-top: 0.2rem;
+		}
 	}
 }
