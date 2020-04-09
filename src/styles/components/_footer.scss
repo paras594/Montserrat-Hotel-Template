@@ -1,0 +1,27 @@
+.simple-footer {
+	background: #000;
+	height: 5rem;
+
+	> .container {
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		> div {
+			display: flex;
+			align-items: center;
+
+			h4 {
+				color: #fff;
+				font-size: 1.4rem;
+				margin-right: 0.5rem;
+			}
+
+			p {
+				color: $gray-400;
+				font-size: 1.2rem;
+			}
+		}
+	}
+}

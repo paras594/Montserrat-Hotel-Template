@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Montserrat</title>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+			defer
+		></script>
+		<script
+			nomodule=""
+			src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"
+			defer
+		></script>
+	</head>
+	<body>
+		<a href="#top-section" class="to-top-button" style="display: none;"
+			><i class="fas fa-angle-up"></i
+		></a>
+		<nav class="nav" id="top-section">
+			<div class="container">
+				<div class="nav__logo">Montserrat</div>
+				<div class="nav__links">
+					<a href="./index.html" class="nav__link">Home</a>
+					<a href="./index.html#rooms-section" class="nav__link">Rooms</a>
+					<a href="#" class="nav__link nav__link--active">Services</a>
+					<a href="./index.html#blog-section" class="nav__link">Blog</a>
+					<a href="./index.html#contact-section" class="nav__link">Contact</a>
+				</div>
+				<div class="nav__toggle">
+					<span class="nav__toggle-mid"></span>
+				</div>
+			</div>
+		</nav>
+		<header class="services__header">
+			<div class="container">
+				<div class="heading">
+					<p class="heading__brand">Montserrat</p>
+					<h1 class="heading__title underline">
+						Hotel Services
+					</h1>
+				</div>
+			</div>
+		</header>
+		<section class="services-page-description container">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ea porro necessitatibus,
+			asperiores vitae voluptas est, a sunt in earum rem fugiat quos perspiciatis sint ut. Animi
+			ipsa iure nam in perferendis, sunt in earum rem fugiat quos perspiciatis sint ut. Animi
+			ipsa iure nam in perferendis,
+		</section>
+		<div class="section-container">
+			<section class="services-section container">
+				<div class="service-img-container order-1">
+					<img src="./images/taxi.svg" alt="car hire service" />
+				</div>
+				<div class="details order-2">
+					<h1>Car Hire Service</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, voluptate
+						laboriosam nisi accusantium eaque assumenda explicabo sunt recusandae, adipisci
+						autem harum facilis et nihil itaque distinctio neque maiores earum nesciunt!et
+						nihil itaque distinctio neque maiores earum nesciunt!
+					</p>
+				</div>
+			</section>
+		</div>
+		<div class="section-container background">
+			<section class="services-section container">
+				<div class="service-img-container order-2">
+					<img src="./images/breakfast.svg" alt="breakfast, lunch & dinner" />
+				</div>
+				<div class="details order-1">
+					<h1>Breakfast, Lunch & Dinner</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, voluptate
+						laboriosam nisi accusantium eaque assumenda explicabo sunt recusandae, adipisci
+						autem harum facilis et nihil itaque distinctio neque maiores earum nesciunt!et
+						nihil itaque distinctio neque maiores earum nesciunt!
+					</p>
+				</div>
+			</section>
+		</div>
+		<div class="section-container">
+			<section class="services-section container">
+				<div class="service-img-container order-1">
+					<img src="./images/treadmill.svg" alt="Fitness Center" />
+				</div>
+				<div class="details order-2">
+					<h1>Fitness Center</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, voluptate
+						laboriosam nisi accusantium eaque assumenda explicabo sunt recusandae, adipisci
+						autem harum facilis et nihil itaque distinctio neque maiores earum nesciunt!et
+						nihil itaque distinctio neque maiores earum nesciunt!
+					</p>
+				</div>
+			</section>
+		</div>
+		<div class="section-container background">
+			<section class="services-section container">
+				<div class="service-img-container order-2">
+					<img src="./images/wifi.svg" alt="Free Wifi in All Rooms" />
+				</div>
+				<div class="details order-1">
+					<h1>Free Wifi in All Rooms</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, voluptate
+						laboriosam nisi accusantium eaque assumenda explicabo sunt recusandae, adipisci
+						autem harum facilis et nihil itaque distinctio neque maiores earum nesciunt!et
+						nihil itaque distinctio neque maiores earum nesciunt!
+					</p>
+				</div>
+			</section>
+		</div>
+		<section class="service-img">
+			<img src="./images/service-img.jpg" alt="service-img" />
+		</section>
+		<footer class="simple-footer">
+			<div class="container">
+				<div>
+					<h4>Address :</h4>
+					<p>2885, Snyder Avenue, Charlotte, North Carolina</p>
+				</div>
+				<div>
+					<h4>Lets Talk :</h4>
+					<p>704-644-7963</p>
+				</div>
+				<div>
+					<h4>General Support :</h4>
+					<p>info@montserrat.com</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://kit.fontawesome.com/f768ff876c.js" crossorigin="anonymous"></script>
+		<script>
+			const toTopBtn = document.querySelector(".to-top-button");
+
+			if (window.scrollY > window.innerHeight / 2) toTopBtn.style.display = "";
+
+			window.addEventListener("scroll", () => {
+				if (!toTopBtn) return;
+				if (window.scrollY > window.innerHeight / 2) {
+					toTopBtn.style.display = "";
+				} else if (window.scrollY < window.innerHeight / 2) {
+					toTopBtn.style.display = "none";
+				}
+			});
+		</script>
+	</body>
+</html>

@@ -10,7 +10,7 @@ module.exports = {
 	},
 	devtool: "source-map",
 	devServer: {
-		port: 3000,
+		port: 5000,
 		contentBase: path.resolve(__dirname, "build"),
 		watchContentBase: true
 	},
@@ -82,6 +82,10 @@ module.exports = {
 		new HtmlWebPackPlugin({
 			template: "./src/rooms.html",
 			filename: "rooms.html"
+		}),
+		new HtmlWebPackPlugin({
+			template: "./src/services.html",
+			filename: "services.html"
 		})
 	]
 };

@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>Document</title>
+		<title>Montserrat</title>
 		<script
 			type="module"
 			src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
@@ -26,13 +26,9 @@
 				<div class="nav__links">
 					<a href="./index.html" class="nav__link">Home</a>
 					<a href="#" class="nav__link nav__link--active">Rooms</a>
-					<a href="./index.html#services-section" class="nav__link"
-						>Services</a
-					>
+					<a href="./index.html#services-section" class="nav__link">Services</a>
 					<a href="./index.html#blog-section" class="nav__link">Blog</a>
-					<a href="./index.html#contact-section" class="nav__link"
-						>Contact</a
-					>
+					<a href="./index.html#contact-section" class="nav__link">Contact</a>
 				</div>
 				<div class="nav__toggle">
 					<span class="nav__toggle-mid"></span>
@@ -63,14 +59,7 @@
 				</div>
 				<div class="options__price options__option">
 					<p>Price:</p>
-					<input
-						id="price"
-						type="range"
-						min="100"
-						max="1000"
-						step="50"
-						value="1000"
-					/>
+					<input id="price" type="range" min="100" max="1000" step="50" value="1000" />
 					<p class="price">$ <span id="input-price">1000</span></p>
 				</div>
 				<div class="options__rating options__option">
@@ -95,15 +84,27 @@
 		</section>
 
 		<section class="rooms__data container" id="rooms-data"></section>
-		<script
-			src="https://kit.fontawesome.com/f768ff876c.js"
-			crossorigin="anonymous"
-		></script>
+		<footer class="simple-footer">
+			<div class="container">
+				<div>
+					<h4>Address :</h4>
+					<p>2885, Snyder Avenue, Charlotte, North Carolina</p>
+				</div>
+				<div>
+					<h4>Lets Talk :</h4>
+					<p>704-644-7963</p>
+				</div>
+				<div>
+					<h4>General Support :</h4>
+					<p>info@montserrat.com</p>
+				</div>
+			</div>
+		</footer>
+		<script src="https://kit.fontawesome.com/f768ff876c.js" crossorigin="anonymous"></script>
 		<script>
 			const toTopBtn = document.querySelector(".to-top-button");
 
-			if (window.scrollY > window.innerHeight / 2)
-				toTopBtn.style.display = "";
+			if (window.scrollY > window.innerHeight / 2) toTopBtn.style.display = "";
 
 			window.addEventListener("scroll", () => {
 				if (!toTopBtn) return;

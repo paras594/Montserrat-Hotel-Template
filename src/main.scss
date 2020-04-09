@@ -14,6 +14,7 @@
 @import "./styles/components/carousel";
 @import "./styles/components/form";
 @import "./styles/components/room-card";
+@import "./styles/components/footer";
 
 // layouts and sections
 @import "./styles/layout/grid";
@@ -30,6 +31,9 @@
 @import "./styles/pages/rooms-page/rooms-header-section";
 @import "./styles/pages/rooms-page/rooms-options-section";
 @import "./styles/pages/rooms-page/rooms-data-section";
+@import "./styles/pages/services-page/services-page";
+@import "./styles/pages/services-page/services-header-section";
+@import "./styles/pages/services-page/services-section";
 
 .size {
 	position: absolute;

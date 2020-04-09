@@ -9,13 +9,13 @@ It's a responsive website template for Businesses like hotels, resorts etc. It's
 - Custom made Full-page carousel using javascript.
 - Webpack to handle files and automate tasks such as vendor prefix, combine media-queries, transpile javascript to ES5 etc. 
 - Smooth scrolling. 
-- Animations on scrolling.
+- Filter and sorting options for rooms
 
 
 
 ### Technologies
 
 - Webpack
-- SASS/SCSS
-- ES6+ 
+- SASS
+- Javascript/ES6+ 
 - AOS.js - animate on scroll javascript library.
