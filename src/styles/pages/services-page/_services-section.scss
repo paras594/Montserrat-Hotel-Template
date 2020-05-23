@@ -4,8 +4,25 @@
 	justify-content: space-around;
 	height: 36rem;
 
+	@media (max-width: 949px) {
+		height: 30rem;
+	}
+
+	@media (max-width: 680px) {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	@media (max-width: 460px) {
+		height: 26rem;
+	}
+
 	.details {
 		width: 50%;
+
+		@media (max-width: 680px) {
+			width: 100%;
+		}
 
 		h1 {
 			font-size: 3rem;
@@ -13,12 +30,36 @@
 			padding: 0.6rem 0;
 			text-align: center;
 			color: $yellow-dark;
+
+			@media (max-width: 1400px) {
+				font-size: 2.2rem;
+			}
+
+			@media (max-width: 949px) {
+				font-size: 1.9rem;
+			}
+
+			@media (max-width: 460px) {
+				font-size: 1.4rem;
+			}
 		}
 
 		p {
 			text-align: center;
 			font-size: 1.4rem;
 			color: $gray-800;
+
+			@media (max-width: 1400px) {
+				font-size: 1.2rem;
+			}
+
+			@media (max-width: 949px) {
+				font-size: 1rem;
+			}
+
+			@media (max-width: 680px) {
+				font-size: 1rem;
+			}
 		}
 	}
 
@@ -29,6 +70,18 @@
 	.order-2 {
 		order: 2;
 	}
+
+	.sm-order-1 {
+		@media (max-width: 680px) {
+			order: 1 !important;
+		}
+	}
+
+	.sm-order-2 {
+		@media (max-width: 680px) {
+			order: 2 !important;
+		}
+	}
 }
 
 .service-img-container {
@@ -37,6 +90,22 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	@media (max-width: 1400px) {
+		width: 14rem;
+	}
+
+	@media (max-width: 949px) {
+		width: 11rem;
+	}
+
+	@media (max-width: 680px) {
+		width: 8rem;
+	}
+
+	@media (max-width: 460px) {
+		width: 5rem;
+	}
 
 	img {
 		width: 100%;
